@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 header {
-  border: 1px solid red;
+  width: 100%;
 }
 header .intro {
   display: flex;
