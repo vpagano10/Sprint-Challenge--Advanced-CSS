@@ -4,12 +4,25 @@
   .top-main {
     h2 {
       padding: 2%;
+      @media @mobile {
+        width: 100%;
+        padding: 2% 3% 1% 3%;
+        font-size: 2.2rem;
+      }//end h2 mobile
     }//end h2 in top
     p {
       padding:0 15px;
+      @media @mobile {
+        width: 100%;
+        padding: 1% 3% 1% 3%;
+        font-size: 1.4rem;
+      }//end p mobile
     }//end p in top
     img {
       border-radius: 5px;
+      @media @mobile {
+        width: 100%;
+      }//top img mobile
     }//end top img
     @media @mobile {
       width: 100%;
@@ -29,6 +42,7 @@
     @media @mobile {
       .blast {
         width: 100%;
+        padding: 2%;
       }//end show mobile img
       .sky, .launch {
         display: none;
@@ -40,35 +54,61 @@
     padding: 15px;
     h3 {
       margin-top: 11px;
+      @media @mobile {
+        width: 100%;
+        font-size: 2.2rem;
+      }//end h3 mobile
     }//end h3
     p {
       margin-top: 13px;
+      @media @mobile {
+        width: 100%;
+        font-size: 1.4rem;
+      }//end p mobile
     }//end p
+    @media @mobile {
+      width: 100%;
+    }//end visit planets mobile
   }//end planets section
 
   .walk {
-    margin-top: 60px;
+    margin: 5% 0% 0% 0%;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 5%;
     display: flex;
     justify-content: center;
     .walk-text {
       width: 50%;
       h3 {
         margin-bottom: 10px;
+        @media @mobile {
+          width: 100%;
+          font-size: 2.2rem;
+          margin-bottom: none;
+          padding: none;
+        }//end h3 mobile
       }//end h3
       p {
         margin-bottom: 26px;
+        @media @mobile {
+          width: 100%;
+          font-size: 1.4rem;
+          margin-bottom: none;
+          padding: none;
+        }//end p mobile
       }//end p
       button {
         .buttons(@btn-bg-color, @btn-txt-color);
         @media @mobile {
           width: 100%;
+          padding: 5%;
         }//end mobile button
       }//end button
       @media @mobile {
         width: 100%;
-        border: 1px solid red;
+        margin: none;
+        padding: none;
+        // border: 1px solid red;
       }//end walk text mobile
     }//end walk text
     .walk-img {
@@ -81,14 +121,18 @@
       }//end img
       @media @mobile {
         width: 100%;
+        margin: 1% 15% 2% 15%;
+        padding: 3%;
       }//end walk img mobile
     }//end walk img
     @media @mobile {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
       width: 100%;
-      margin: none;
-      border: 1px solid blue;
+      margin-top: none;
+      padding: 2%;
+      // border: 1px solid blue;
     }//end walk mobile
   }//end walk section
 }// home
