@@ -1,1 +1,20 @@
 // Mixins Here
+
+// need to create and use 2 mixins
+// need to make parametric mixin for the buttons using at least 2 parameters
+// create a hover version of the buttons that swaps the colors
+
+.buttons(@btn-bg-color, @btn-txt-color) {
+    width: 100px;
+    background-color: @btn-bg-color;
+    color: @btn-txt-color;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    border: 1px solid @btn-bg-color;
+    &:hover {
+        background-color: @btn-txt-color;
+        color: @btn-bg-color;
+        border: 1px solid @btn-bg-color;
+    }//end button hover
+}//end buttons
